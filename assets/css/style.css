@@ -1,0 +1,102 @@
+#popScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    z-index: 9999;
+}
+
+.btn-open-invitation {
+    padding: 8px 15px;
+    border: 1px solid #9A7730;
+    border-radius: 10px;
+    color: #9A7730;
+}
+
+.btn-open-invitation:hover {
+    background: #9A7730;
+    color: #ffffff;
+    transition: .2s ease-in-out;
+}
+
+#popScreen.hide {
+    opacity: 0;
+    animation: fadeOut .3s ease-in-out;
+    z-index: -1;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        z-index: 9999;
+    }
+    100% {
+        opacity: 0;
+        z-index: 9999;
+    }
+}
+
+#home {
+    background: #9a773045;
+    min-height: 700px;
+}
+
+.bingkai1 {
+    position: absolute;
+    top: 10px;
+    left: 220px;
+}
+
+.bingkai2 {
+    position: absolute;
+    right: 220px;
+    top: 400px;
+}
+
+#home .home-title {
+    color: #9A7730;
+    margin-bottom: 20px;
+}
+
+.text-custom {
+    color: #654e20;
+}
+
+#dateTimer {
+    background: #5A4E36;
+    color: #fff;
+}
+
+#dateTimer .timer .card {
+    background: none;
+    border: 1px solid #fff;
+}
+
+#coupleName {
+    border: 1px solid #9A7730;
+}
+
+@media(max-width: 568px){
+    .container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .bingkai1 {
+        top: 10px;
+        left: 10px;
+    }
+
+    .bingkai2 {
+        top: 460px;
+        right: 10px;
+    }
+
+    #home {
+        min-height: 600px;
+    }
+}
