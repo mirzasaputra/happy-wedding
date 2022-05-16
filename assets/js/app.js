@@ -1,6 +1,7 @@
 function hidePopScreen()
 {
     $('#popScreen').addClass('hide')
+    $('#main').removeClass('d-none')
 
     var audioElement = document.createElement('audio');
     audioElement.setAttribute('src', 'assets/music/Arvian Dwi - Melepas Lajang Ft Tri Suaka (mp3cut.net).mp3');
